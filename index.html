@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/ionicons/css/ionicons.min.css">
+  <link rel="shortcut icon" href="assets/images/movie-icon.png">
+  <title>Movie Info - Get Infos On Your Favourite Movies.</title>
+</head>
+<body>
+  
+  <main>
+    <div class="navbar-toggle" title="Click to toggle sidebar">
+      <i class="ion-chevron-right"></i>
+    </div>
+    <div class="navbar-overlay"></div>
+    <nav class="navbar">
+      <div class="inner-navbar">
+        <div class="search">
+          <form id="search-form">
+            <input type="text"  id="search-input">
+          </form>
+        </div>
+        <!-- Menu Links -->
+        <ul class="menus">
+          <li class="movies-result-toggle"><span>Movies Result</span></li>
+          <div class="sep"></div>
+          <li class="movies-fav-toggle"><span>Favourites</span><i class="ion-ios-star icon-star"></i></li>
+        </ul>
+      </div>
+    </nav>
+    
+    
+    <!-- Movies -->
+    <div class="movies">
+      <div class="movies-result">
+        <div class="container">
+          <div class="wrapper movies-res-con">
+          </div>
+        </div>
+      </div>
+      <div class="movies-fav">
+        <div class="container">
+          <div class="trash" title="Delete all favourite movies"> <i class="ion-ios-trash trash-icon"></i> </div>
+          <div class="wrapper movies-fav-con">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </main>
+  <!-- Overlay Movie -->
+  <div class="movie-data-wrap">
+  </div>
+
+  <div class="load-screen">
+    <img src="assets/images/loading.gif" alt="">
+  </div>
+  
+  <div class="footer">
+    <div class="inner-footer">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> Movie Info </p>
+      <img src="assets/images/movie-icon.png" alt="">
+    </div>
+  </div>
+  
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/event.js"></script>
+  <script>
+    searchMovie();
+  </script>
+</body>
+</html>
